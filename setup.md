@@ -91,7 +91,7 @@ UUID=9e42b5a3-2cf1-4c8a-bb09-4f1a8dab1dc5  /nix  btrfs  defaults,subvol=@nix,com
 # }
 ```
 
-- `mount /dev/nvme0n1p3 /mnt/@/boot/efi`
+- `mount /dev/nvme0n1p1 /mnt/@/boot/efi`
 - `sed -i 's/splash/splash rootflags=subvol=@/' /mnt/@/boot/efi/loader/entries/Pop_OS-current.conf`
 - Optionally add a timeout for the systemd boot menu for the recovery partition
 - `echo "timeout 3" >> /mnt/@/boot/efi/loader/loader.conf`
