@@ -113,6 +113,7 @@ Next, log into your user account, update Pop!_OS, install COSMIC DE, enable wayl
 - Change `WaylandEnable=false` to `WaylandEnable=true`
 - `sudo nano /etc/passwd`
 - Change `root:x:0:0:root:/root:/bin/bash` to `root:x:0:0:root:/var/root:/bin/bash`
+- `sudo mkdir /var/root`
 - `reboot` and login again
 - Install Nix Packages in multi-user mode
 - `sh <(curl -L https://nixos.org/nix/install) --daemon`
