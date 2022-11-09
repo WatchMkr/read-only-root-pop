@@ -121,7 +121,7 @@ Next, log into your user account, update Pop!_OS, install COSMIC DE, enable wayl
 - `sudo btrfs property set -ts / ro true` (Change to "false" to run updates with apt or modifiy files in root then reset to "true").
 - Use `btrfs property get -ts /` to check the read only status.
 
-Install flatpaks with `flatpak install $application`. Install nix packages with 'nix-env -i $application'.
+Install flatpaks with `flatpak install $application`. Install nix packages with `nix-env -i $application`.
 
 There are some caveats. Settings > Users will not work because with read-only root. CUPS also doesn't work for printing. More caveates may still exist with samba. For more info see https://wiki.debian.org/ReadonlyRoot.
 
