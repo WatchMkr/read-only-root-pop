@@ -123,6 +123,11 @@ Next, log into your user account, update Pop!_OS, install COSMIC DE, enable wayl
 
 Install flatpaks with `flatpak install $application`. Install nix packages with `nix-env -i $application`.
 
-There are some caveats. Settings > Users will not work because with read-only root. CUPS also doesn't work for printing. More caveates may still exist with samba. For more info see https://wiki.debian.org/ReadonlyRoot.
+Caveats
+
+- Settings > Users will not work because with read-only root
+- CUPS also doesn't work for printing. 
+- Connecting to a new wireless network requires setting the root volume to read/write though it can be changed back to read only after connecting
+- More caveates may still exist with samba. For more info see https://wiki.debian.org/ReadonlyRoot.
 
 These instructions were adapted from here https://mutschler.dev/linux/pop-os-btrfs-22-04/#changes-to-fstab. Thanks for the excellent write-up.
